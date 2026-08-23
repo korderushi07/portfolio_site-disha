@@ -1538,15 +1538,26 @@ h2 {
   .achievements-counter-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 8px;
+    gap: 4px;
     padding-bottom: 24px;
+    align-items: start;
+  }
+  .counter-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   .counter-num {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    white-space: nowrap;
+    margin-bottom: 6px;
   }
   .counter-label {
-    font-size: 0.55rem;
-    word-break: break-word;
+    font-size: 0.45rem;
+    line-height: 1.2;
+    text-align: center;
   }
 
   .expertise-card { border-left: none; padding-left: 0; }
@@ -1565,6 +1576,11 @@ h2 {
   .leadership-card { padding: 28px; }
 
   .contact-form { padding: 28px; }
+
+  .proof-inner {
+    justify-content: center;
+    gap: 12px;
+  }
 
   /* Grid and flex children default to min-width:auto, so a long word or a
      fixed inner grid can push a card wider than its track and scroll the
