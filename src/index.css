@@ -1466,24 +1466,31 @@ h2 {
     /* A full 100vh left ~130px of dead space between the headline and the
        rest, and pushed the next section well below the fold. svh overrides
        vh where supported so mobile browser chrome cannot overshoot. */
-    height: 78vh;
-    height: 78svh;
-    min-height: 520px;
-    max-height: 700px;
+    height: 64vh;
+    height: 64svh;
+    min-height: 440px;
+    max-height: 580px;
     margin: 0;
     border-radius: 0;
   }
   /* Fixed offsets rather than percentages: the header is a fixed 84px, so
      a percentage of a clamped hero can slide under it on short screens. */
-  .headline { top: 104px; }
-  .pill { top: 190px; font-size: 11px; padding: 8px 14px 8px 12px; }
+  .headline { top: 100px; font-size: clamp(38px, 11vw, 48px); }
+  .pill { top: 162px; font-size: 11px; padding: 8px 14px 8px 12px; }
   .pill::before { width: 10px; height: 10px; }
-  .spec { top: 190px; max-width: 130px; font-size: 11px; }
-  .name { font-size: clamp(28px, 7vw, 48px); letter-spacing: -1px; bottom: 15%; z-index: 3; }
-  .role { font-size: clamp(13px, 3vw, 20px); left: 4%; right: auto; bottom: 6%; text-align: left; z-index: 3; }
+  /* A shorter hero raises the bottom-anchored portrait, so this text now
+     sits over her hair. Same halo the name uses, to keep it legible. */
+  .spec {
+    top: 162px;
+    max-width: 130px;
+    font-size: 11px;
+    text-shadow: 0 0 14px var(--color-bg), 0 0 4px var(--color-bg);
+  }
+  .name { font-size: clamp(28px, 7vw, 44px); letter-spacing: -1px; bottom: 14%; z-index: 3; }
+  .role { font-size: clamp(12px, 3vw, 18px); left: 4%; right: auto; bottom: 5%; text-align: left; z-index: 3; }
   /* Centre the portrait. At left:72% most of her was cropped off-screen.
      Height is a % of .hero rather than vh so it tracks the clamps above. */
-  .subject { left: 50%; height: 78%; }
+  .subject { left: 50%; height: 84%; }
 
   .nav-desktop, .nav-cta { display: none; }
   .menu-toggle { display: flex; }
