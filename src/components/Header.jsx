@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NAV_ITEMS } from "../data/content.js";
+import { NAV_ITEMS, RESUME_URL } from "../data/content.js";
 import useScrolled from "../hooks/useScrolled.js";
 
 export default function Header({ activeId }) {
@@ -30,7 +30,12 @@ export default function Header({ activeId }) {
           </ul>
         </nav>
 
-        <a href="#" className="btn btn-primary nav-cta" target="_blank" rel="noopener noreferrer">
+        <a
+          href={RESUME_URL}
+          className="btn btn-primary nav-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Resume ↗
         </a>
 
@@ -57,7 +62,13 @@ export default function Header({ activeId }) {
             </li>
           ))}
           <li>
-            <a href="#" className="nav-link" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
+            <a
+              href={RESUME_URL}
+              className="nav-link"
+              onClick={closeMenu}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume ↗
             </a>
           </li>

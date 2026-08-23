@@ -7,6 +7,10 @@ export const NAV_ITEMS = [
   { id: "contact", label: "Contact" },
 ];
 
+// Lives in public/, so it is served from the site root and copied to dist/ as-is.
+// To update the résumé, replace that file keeping the same name.
+export const RESUME_URL = "/Disha-Jain-Resume.pdf";
+
 export const CONTACT_LINKS = [
   { icon: "✉", label: "dishajain1967@gmail.com", href: "mailto:dishajain1967@gmail.com" },
   { icon: "📞", label: "+91 70574 06478", href: "tel:7057406478" },
