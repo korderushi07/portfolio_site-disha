@@ -137,11 +137,11 @@ export const EDUCATION = [
 
 export const ACHIEVEMENTS = {
   metrics: [
-    { num: "20+", label: "Case Competitions" },
+    { num: "20+", label: "Case Competition" },
     { num: "12+", label: "Competition Wins" },
     { num: "Rank 1", label: "Industry Analysis Competition" },
     { num: "Rank 1", label: "EcoSim Financial Diplomacy" },
-    { num: "Rank 3", label: "University — BBA Finance" }
+    { num: "Rank 3", label: "University BBA Finance" }
   ],
   cards: [
     {
