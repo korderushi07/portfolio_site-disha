@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
-import Works from "./components/Works.jsx";
 import Services from "./components/Services.jsx";
 import About from "./components/About.jsx";
 import Experience from "./components/Experience.jsx";
-import Gallery from "./components/Gallery.jsx";
+import Achievements from "./components/Achievements.jsx";
+import Extracurriculars from "./components/Extracurriculars.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
@@ -23,11 +23,11 @@ export default function App() {
       <Header activeId={activeId} />
       <main>
         <Hero />
-        <Works />
         <Services />
         <About />
         <Experience />
-        <Gallery />
+        <Achievements />
+        <Extracurriculars />
         <Testimonials />
         <Contact />
       </main>

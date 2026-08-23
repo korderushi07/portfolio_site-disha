@@ -7,7 +7,7 @@ export default function Footer() {
         <a href="#hero" className="logo">
           Disha<span className="dot">.</span>
         </a>
-        <p>&copy; {year} Disha Kapoor. Crafted with intention.</p>
+        <p>&copy; {year} Disha Jain. Crafted with intention.</p>
         <a href="#hero" className="back-to-top" aria-label="Back to top">
           ↑
         </a>

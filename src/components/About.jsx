@@ -12,9 +12,10 @@ export default function About() {
             VISION INTO IMPACT
           </h2>
           <p>
-            I'm an MBA candidate blending analytical rigor with brand storytelling. Before business
-            school, I spent three years leading go-to-market initiatives for a consumer-tech startup —
-            I build practical, data-backed solutions for brands to grow on.
+            I am an execution-focused individual with a highly analytical mindset, dedicated to bridging
+            the gap between operational strategies and financial realities. My academic journey spans from an
+            undergraduate degree in BBA Finance in Nagpur to studying MSc Finance at JBIMS in Mumbai's Back Bay.
+            I believe brands are scaled with the right decisions after deeply analyzing their financial health.
           </p>
 
           <div className="about-stats">

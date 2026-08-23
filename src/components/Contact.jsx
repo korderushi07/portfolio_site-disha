@@ -36,8 +36,8 @@ export default function Contact() {
             WORTH TALKING ABOUT
           </h2>
           <p className="hero-lede">
-            Open to full-time strategy, brand, and growth roles starting 2026 — and always happy
-            to talk shop over coffee (virtual or otherwise).
+            Open to work on websites, brand image, and financial health — and always happy
+            to connect over email or phone!
           </p>
 
           <div className="contact-links">
