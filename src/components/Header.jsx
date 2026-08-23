@@ -30,8 +30,8 @@ export default function Header({ activeId }) {
           </ul>
         </nav>
 
-        <a href="#contact" className="btn btn-primary nav-cta">
-          Contact
+        <a href="#" className="btn btn-primary nav-cta" target="_blank" rel="noopener noreferrer">
+          Resume ↗
         </a>
 
         <button
@@ -57,8 +57,8 @@ export default function Header({ activeId }) {
             </li>
           ))}
           <li>
-            <a href="#contact" className="nav-link" onClick={closeMenu}>
-              Contact
+            <a href="#" className="nav-link" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
+              Resume ↗
             </a>
           </li>
         </ul>

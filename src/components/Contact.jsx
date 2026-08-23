@@ -30,14 +30,9 @@ export default function Contact() {
     <section className="contact" id="contact">
       <div className="container contact-inner">
         <Reveal as="div" className="contact-copy">
-          <h2>
-            LET'S BUILD SOMETHING
-            <br />
-            WORTH TALKING ABOUT
-          </h2>
+          <h2>LET'S CONNECT</h2>
           <p className="hero-lede">
-            Open to work on websites, brand image, and financial health — and always happy
-            to connect over email or phone!
+            Open to conversations around finance, strategy, business analysis and meaningful opportunities.
           </p>
 
           <div className="contact-links">

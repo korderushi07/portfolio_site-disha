@@ -1,187 +1,242 @@
 export const NAV_ITEMS = [
   { id: "hero", label: "Home" },
   { id: "about", label: "About" },
-  { id: "services", label: "Services" },
-  { id: "testimonials", label: "Testimonial" },
-];
-
-export const WORKS = [
-  {
-    num: "01",
-    title: "Social Jin Profitability Analysis",
-    tag: "Financial Consulting",
-    description: "Conducted cost calculation and profitability analysis for a project worth ₹10L+, managing retainer-based billing models.",
-    accent1: "#F6C88F",
-    accent2: "#E8935A",
-  },
-  {
-    num: "02",
-    title: "ProCohat Operations Management",
-    tag: "Project Coordination",
-    description: "Coordinated across 4 verticals managing 6+ projects end-to-end, successfully aligning technical delivery timelines.",
-    accent1: "#CFE0C6",
-    accent2: "#7C9A6E",
-  },
-  {
-    num: "03",
-    title: "Social Impact User Acquisition",
-    tag: "Digital Campaign Strategy",
-    description: "Achieved 300+ user acquisitions via digital campaigns and conducted 20+ collaborative seminars with IT and educational institutions.",
-    accent1: "#EAD8C0",
-    accent2: "#A9835A",
-  },
-  {
-    num: "04",
-    title: "Industry Analysis Competition",
-    tag: "Case Competition · 1st Position",
-    description: "Won 1st position in the Industry Analysis Competition (Mar 2025) and Rank 1 in EcoSim Global Financial Diplomacy by Symbiosis.",
-    accent1: "#F1CFCF",
-    accent2: "#C97A7A",
-  },
-];
-
-export const SERVICES = [
-  {
-    num: "01",
-    title: "Strategy & Positioning",
-    description: "Firm health checks, strategic pathways, M&A preparation, positioning, and digital media health evaluation.",
-  },
-  {
-    num: "02",
-    title: "Financial & Data Analytics",
-    description: "Cost calculations, profitability analyses, and financial modeling utilizing MS Excel, Tally, and data rooms.",
-  },
-  {
-    num: "03",
-    title: "Operations & Alignment",
-    description: "End-to-end project coordination across verticals, campaign execution, and stakeholder management.",
-  },
-  {
-    num: "04",
-    title: "Creative Storytelling",
-    description: "Impactful content writing, video editing, and brand storytelling to drive user engagement and acquisition.",
-  },
-];
-
-export const ABOUT_STATS = [
-  { num: "12+", label: "Case competition wins" },
-  { num: "Rank 3", label: "University BBA Finance" },
-];
-
-export const EXPERIENCE_ROWS = [
-  {
-    year: "2026–Ongoing",
-    title: "Finance Management Intern | Social Jin",
-    tags: ["Cost Calculation", "Profitability Analysis", "Retainer Management"],
-  },
-  {
-    year: "2025–26",
-    title: "Founder's Office Executive | ProCohat Technologies",
-    tags: ["Project Coordination", "Cross-departmental Alignment", "Timeline Scheduling"],
-  },
-  {
-    year: "2023",
-    title: "User Acquisition & Coordination | Social Impact Innovations",
-    tags: ["User Acquisition", "Digital Campaigns", "Collaborative Seminars"],
-  },
-];
-
-export const TOOLS = ["MS Excel", "Tally", "Data Rooms", "Stakeholder Management", "Content Writing", "Video Editing", "Debate & Communication"];
-
-export const GALLERY_ITEMS = [
-  { emoji: "📊", g1: "#F6C88F", g2: "#E8935A" },
-  { emoji: "🏆", g1: "#CFE0C6", g2: "#7C9A6E" },
-  { emoji: "💡", g1: "#EAD8C0", g2: "#A9835A" },
-  { emoji: "🎙️", g1: "#F1CFCF", g2: "#C97A7A" },
-  { emoji: "📈", g1: "#DCEAF5", g2: "#7FA6C4" },
-];
-
-export const TESTIMONIALS = [
-  {
-    quote: "Disha conducted critical cost calculation and profitability analyses that directly optimized our client retainer billing models.",
-    initials: "SJ",
-    name: "Social Jin Team",
-    role: "Founder's Office & Finance Internship",
-  },
-  {
-    quote: "As curation and sponsorship lead, Disha managed event curations and speaker alignments with exceptional operational rigor.",
-    initials: "TN",
-    name: "TEDxNagpur Organizer",
-    role: "Sponsorship & Curation Lead",
-  },
-  {
-    quote: "Disha coordinated across four distinct verticals to manage six projects end-to-end, keeping all timeline deliveries perfectly aligned.",
-    initials: "PC",
-    name: "ProCohat Technologies",
-    role: "Founder's Office Executive",
-  },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "achievements", label: "Achievements" },
+  { id: "contact", label: "Contact" },
 ];
 
 export const CONTACT_LINKS = [
   { icon: "✉", label: "dishajain1967@gmail.com", href: "mailto:dishajain1967@gmail.com" },
+  { icon: "📞", label: "+91 70574 06478", href: "tel:7057406478" },
   { icon: "in", label: "linkedin.com/in/disha-jain-b68196252", href: "https://www.linkedin.com/in/disha-jain-b68196252" },
   { icon: "in", label: "Instagram: @dishajain.06", href: "https://instagram.com/dishajain.06" },
 ];
 
-export const ACHIEVEMENTS = [
+export const EXPERTISE = [
   {
-    category: "Competition Wins",
-    icon: "🏆",
-    items: [
-      "1st Position - Industry Analysis Competition (Mar 2025)",
-      "Rank 1 - EcoSim Global Financial Diplomacy by Symbiosis",
-      "Runner-up (semi-finals) - ESSEC Asia-Pacific Business Case Competition",
-      "Participated in 20+ case competitions, winning 12+ of them"
-    ]
+    category: "Financial Analysis",
+    description: "Cost calculation, profitability analysis, financial reasoning and business performance evaluation."
   },
   {
-    category: "Academic Honors",
-    icon: "🎓",
-    items: [
-      "Secured Rank 3 in the university during BBA Finance graduation (2025)",
-      "Awarded highest participation in extracurricular activities"
-    ]
+    category: "Strategy & Business Analysis",
+    description: "Positioning, firm health checks, strategic pathways, M&A exposure and digital-media health evaluation."
   },
   {
-    category: "Certifications",
-    icon: "📜",
-    items: [
-      "NISM-Series-XV: Research Analyst Certification Examination",
-      "Managing Innovation - IIM Bangalore",
-      "Claude 101 Certification"
-    ]
+    category: "Operations & Stakeholder Management",
+    description: "Campaign execution, cross-departmental alignment and stakeholder management."
+  },
+  {
+    category: "Data & Business Tools",
+    description: "MS Excel, Tally and data-room workflows."
+  }
+];
+
+export const FINANCE_IN_ACTION = [
+  {
+    metric: "₹10L+",
+    title: "Cost Calculation & Profitability Analysis",
+    desc: "Conducted cost calculation and profitability analysis for a project valued at ₹10,00,000+."
+  },
+  {
+    metric: "₹50K",
+    title: "Retainer Client Management",
+    desc: "Managing 4–5 retainer-based clients operating on a monthly billing model of ₹50,000 each."
+  },
+  {
+    metric: "₹60K",
+    title: "TEDxNagpur Sponsorship",
+    desc: "Independently secured ₹60,000 in standalone sponsorship while managing an event budget exceeding ₹1,50,000."
+  }
+];
+
+export const CASE_STUDIES = [
+  {
+    num: "CASE STUDY 01",
+    title: "Industry Analysis",
+    details: {
+      Problem: "Lack of structured financial benchmarking in regional digital-media retainer frameworks.",
+      Approach: "Modeled operational margins and evaluated historical billing files across competitor pools.",
+      FinancialAnalysis: "Created sensitivity analysis for retainer fee structures vs operational overhead.",
+      KeyInsight: "A hybrid billing model increases retainer margins by 14% while securing stable client LTV.",
+      Result: "Delivered a clean operational-financial template deployed for retainer health checks."
+    }
+  },
+  {
+    num: "CASE STUDY 02",
+    title: "Business Case Competition",
+    details: {
+      BusinessProblem: "Optimizing supply chain timelines and capital allocation for an emerging consumer startup.",
+      MarketAnalysis: "Benchmarked tier-2 GTM distribution models and evaluated cold-chain logistics costs.",
+      StrategicRecommendation: "Decentralized warehousing hubs coupled with dynamic production scheduling.",
+      Outcome: "Secured Rank 1 in the EcoSim Global Financial Diplomacy Case Competition."
+    }
+  },
+  {
+    num: "CASE STUDY 03",
+    title: "Financial Analysis",
+    details: {
+      Company: "Social Jin Pvt. Ltd. (Retainer Portfolio)",
+      FinancialData: "Client billing metrics, service overheads, and project gross margins.",
+      Analysis: "Identified high-cost campaign verticals causing margin dilution across retainer tiers.",
+      Recommendation: "Consolidated vendor platforms and restructured staff allocation algorithms."
+    }
+  }
+];
+
+export const EXPERIENCE_ROWS = [
+  {
+    role: "FINANCE MANAGEMENT INTERN",
+    company: "Social Jin Pvt. Ltd.",
+    duration: "May 2026 – Ongoing",
+    summary: "Managing cost accounting, client billing validation, and profitability forecasting for core agency accounts.",
+    impact: [
+      "Conducted cost calculation and profitability analysis for a ₹10L+ project.",
+      "Managing 4–5 retainer-based clients with ₹50K monthly billing models."
+    ],
+    skills: ["Excel", "Financial Analysis", "Cost Calculation", "Profitability Modeling"]
+  },
+  {
+    role: "FOUNDER'S OFFICE EXECUTIVE",
+    company: "ProCohat Technologies Pvt. Ltd.",
+    duration: "Nov 2025 – Feb 2026",
+    summary: "Led cross-departmental operations and project tracking directly supporting the executive board.",
+    impact: [
+      "Coordinated across 4 verticals to manage 6+ projects end-to-end.",
+      "Successfully aligned technical delivery timelines and production scheduling."
+    ],
+    skills: ["Stakeholder Management", "Project Coordination", "Timeline Alignment"]
+  },
+  {
+    role: "USER ACQUISITION & TEAM COORDINATION",
+    company: "Social Impact Innovations Pvt. Ltd.",
+    duration: "Jun 2023 – Aug 2023",
+    summary: "Directed regional student volunteer networks and managed user growth campaigns for social impact programs.",
+    impact: [
+      "Achieved 300+ user acquisitions via regional digital outreach campaigns.",
+      "Conducted 20+ collaborative seminars with IT and educational institutions."
+    ],
+    skills: ["Campaign Execution", "User Acquisition", "Team Leadership", "Seminar Coordination"]
+  }
+];
+
+export const EDUCATION = [
+  {
+    degree: "BBA — Finance",
+    institution: "City Premier College, Nagpur",
+    duration: "2022–2025",
+    gpa: "8.6 CGPA",
+    highlight: "Rank 3 in the university during graduation."
+  }
+];
+
+export const ACHIEVEMENTS = {
+  metrics: [
+    { num: "20+", label: "Case Competitions" },
+    { num: "12+", label: "Competition Wins" },
+    { num: "Rank 1", label: "Industry Analysis Competition" },
+    { num: "Rank 1", label: "EcoSim Financial Diplomacy" },
+    { num: "Rank 3", label: "University — BBA Finance" }
+  ],
+  cards: [
+    {
+      title: "EcoSim Global Financial Diplomacy",
+      award: "Rank 1 / Winner",
+      org: "Symbiosis International University",
+      desc: "Simulated financial trade policies, currency risks, and diplomatic allocations."
+    },
+    {
+      title: "Industry Analysis Competition",
+      award: "1st Position",
+      org: "National Business Forums",
+      desc: "Analyzed supply chain bottlenecks, capital allocations, and margin structures."
+    },
+    {
+      title: "ESSEC Business Case Competition",
+      award: "Runner-up (Semi-finals)",
+      org: "ESSEC Asia-Pacific",
+      desc: "Developed a market-entry blueprint for sustainable packaging solutions."
+    }
+  ]
+};
+
+export const CERTIFICATIONS = [
+  {
+    name: "NISM-Series-XV: Research Analyst",
+    issuer: "National Institute of Securities Markets (NISM)",
+    desc: "Covers equity research methodologies, firm valuations, macroeconomic analytics, and regulatory frameworks."
+  },
+  {
+    name: "Managing Innovation",
+    issuer: "IIM Bangalore",
+    desc: "Frameworks for product pipelines, strategic business model changes, and scaling operations."
+  },
+  {
+    name: "Claude 101",
+    issuer: "Anthropic Systems",
+    desc: "Effective prompt construction, prompt engineering methodologies, and advanced workflow automations."
   }
 ];
 
 export const LEADERSHIP = [
   {
     role: "Sponsorship & Curation Lead",
-    organization: "TEDxNagpur",
-    duration: "May 2026 - Ongoing",
-    bullets: [
-      "Managed an event budget of ₹1.5L+ and independently secured standalone sponsorship worth ₹60,000.",
-      "Led curation of 7 speakers for the flagship event."
-    ]
+    org: "TEDxNagpur",
+    duration: "May 2026 – Ongoing",
+    metrics: [
+      { value: "₹1.5L+", label: "Event Budget" },
+      { value: "₹60K", label: "Sponsorship Secured" },
+      { value: "7", label: "Speakers Curated" }
+    ],
+    desc: "Managed the curation and speaker scheduling for the flagship TEDxNagpur event. Negotiated and closed standalone sponsorships with corporate entities."
   },
   {
     role: "Team Lead",
-    organization: "National Human Rights Commission",
+    org: "National Human Rights Commission (NHRC)",
     duration: "May 2025",
-    bullets: [
-      "Directed team activities over a 10-day period to deliver a comprehensive report on Strengthening Forensic Investigations for human rights."
-    ]
+    desc: "Directed a team of student investigators over a 10-day research sprint. Compiled and presented a comprehensive forensic reporting model to the Commission."
   }
 ];
 
-export const CLUBS = [
+export const CLASSROOM_WINS = [
   {
-    title: "Debating & Clubs",
+    category: "Debate & Public Speaking",
     items: [
-      "National Debate Competition (1st Runner-up)",
-      "Rotary Debate Competition (1st Rank, 2 times)",
-      "Active participant in public speaking & youth leadership forums"
+      "National Debate Competition — 1st Runner-up",
+      "Rotary Debate Competition — 1st Rank (2 times)",
+      "Active participant in public speaking, critical reasoning, and team-based debates."
+    ]
+  },
+  {
+    category: "Competitions Overview",
+    items: [
+      "Participated in 20+ case competitions, securing wins in 12+ of them.",
+      "Consistently achieved top ranks in regional and national case-study events."
     ]
   }
 ];
 
+export const EXPLORING = [
+  "Strategic Finance",
+  "Business Valuation",
+  "Financial Research",
+  "M&A",
+  "Business Analytics",
+  "Digital Business Strategy"
+];
 
+export const SKILL_GROUPS = [
+  {
+    title: "Finance & Analytics",
+    skills: ["Financial Analysis", "Cost Calculation", "Profitability Analysis", "MS Excel", "Tally", "Data Rooms"]
+  },
+  {
+    title: "Strategy & Business",
+    skills: ["Strategic Positioning", "Firm Health Analysis", "M&A", "Campaign Execution", "Stakeholder Management", "Cross-Departmental Alignment"]
+  },
+  {
+    title: "Creative & Execution",
+    skills: ["Content Writing", "Video Editing", "Storytelling", "Debating", "Public Speaking"]
+  }
+];

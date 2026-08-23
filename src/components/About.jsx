@@ -1,5 +1,4 @@
 import Reveal from "./Reveal.jsx";
-import { ABOUT_STATS } from "../data/content.js";
 
 export default function About() {
   return (
@@ -17,15 +16,6 @@ export default function About() {
             undergraduate degree in BBA Finance in Nagpur to studying MSc Finance at JBIMS in Mumbai's Back Bay.
             I believe brands are scaled with the right decisions after deeply analyzing their financial health.
           </p>
-
-          <div className="about-stats">
-            {ABOUT_STATS.map((stat) => (
-              <div className="stat" key={stat.label}>
-                <span className="stat-num">{stat.num}</span>
-                <span className="stat-label">{stat.label}</span>
-              </div>
-            ))}
-          </div>
         </Reveal>
 
         <Reveal as="div" className="about-visual">

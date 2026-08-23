@@ -1,34 +1,64 @@
 import Reveal from "./Reveal.jsx";
-import { EXPERIENCE_ROWS, TOOLS } from "../data/content.js";
+import { EXPERIENCE_ROWS, SKILL_GROUPS } from "../data/content.js";
 
 export default function Experience() {
   return (
     <section className="experience" id="experience">
       <div className="container">
-        <Reveal as="h2">EXPERIENCE &amp; SKILLS</Reveal>
+        <Reveal as="h2">WORK EXPERIENCE</Reveal>
 
-        <div className="exp-rows">
+        <div className="experience-cards">
           {EXPERIENCE_ROWS.map((row) => (
-            <Reveal as="div" className="exp-row" key={row.year}>
-              <span className="exp-year">{row.year}</span>
-              <span className="exp-title">{row.title}</span>
-              <span className="exp-tags">
-                {row.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </span>
+            <Reveal as="div" className="exp-horizontal-card" key={row.company}>
+              <div className="exp-card-header">
+                <div>
+                  <h3>{row.role}</h3>
+                  <span className="company">{row.company}</span>
+                </div>
+                <span className="duration">{row.duration}</span>
+              </div>
+              
+              <p className="exp-summary">{row.summary}</p>
+              
+              <div className="exp-impact-section">
+                <strong>Impact Highlights</strong>
+                <ul className="exp-bullets">
+                  {row.impact.map((bullet, idx) => (
+                    <li key={idx}>{bullet}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="exp-footer">
+                <div className="exp-skills">
+                  {row.skills.map((skill) => (
+                    <span className="skill-tag" key={skill}>{skill}</span>
+                  ))}
+                </div>
+                <button className="btn-details">
+                  View Details +
+                </button>
+              </div>
             </Reveal>
           ))}
         </div>
 
-        <Reveal as="div" className="tools">
-          <span className="tools-label">Tools I use</span>
-          <div className="tool-tags">
-            {TOOLS.map((tool) => (
-              <span key={tool}>{tool}</span>
+        {/* Unified Skills Section */}
+        <div className="unified-skills">
+          <Reveal as="h3">SKILLS MATRIX</Reveal>
+          <div className="skills-grid">
+            {SKILL_GROUPS.map((group) => (
+              <Reveal as="div" className="skill-group" key={group.title}>
+                <h4>{group.title}</h4>
+                <div className="tool-tags">
+                  {group.skills.map((skill) => (
+                    <span className="tool-tag" key={skill}>{skill}</span>
+                  ))}
+                </div>
+              </Reveal>
             ))}
           </div>
-        </Reveal>
+        </div>
       </div>
     </section>
   );
