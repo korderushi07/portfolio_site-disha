@@ -268,6 +268,8 @@ h2 {
   position: relative;
   width: 100%;
   max-width: none;
+  max-height: 1000px;
+  min-height: 600px;
   height: 100vh;
   overflow: hidden;
   background: radial-gradient(ellipse 90% 70% at 50% 55%, var(--grad-3) 0%, var(--grad-2) 30%, var(--grad-1) 55%, rgba(255,255,255,0.7) 80%, var(--color-surface) 100%);
@@ -297,7 +299,7 @@ h2 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 82vh;
+  height: 82%;
   width: auto;
   z-index: 2;
   object-fit: contain;
@@ -1446,125 +1448,4 @@ h2 {
   color: #fff;
   transform: translateY(-3px);
 }
-
-/* =========================================================
-   Responsive
-========================================================= */
-@media (max-width: 1024px) {
-  .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .about-visual { order: -1; }
-  .expertise-row { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
-  .expertise-card:nth-child(even) { border-left: none; padding-left: 0; }
-  .contact-inner { grid-template-columns: 1fr; }
-  .achievements-counter-grid { grid-template-columns: repeat(3, 1fr); row-gap: 24px; }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    aspect-ratio: auto;
-    width: 100%;
-    /* A full 100vh left ~130px of dead space between the headline and the
-       rest, and pushed the next section well below the fold. svh overrides
-       vh where supported so mobile browser chrome cannot overshoot. */
-    height: 64vh;
-    height: 64svh;
-    min-height: 440px;
-    max-height: 580px;
-    margin: 0;
-    border-radius: 0;
-  }
-  /* Fixed offsets rather than percentages: the header is a fixed 84px, so
-     a percentage of a clamped hero can slide under it on short screens. */
-  .headline { top: 100px; font-size: clamp(38px, 11vw, 48px); }
-  .pill { top: 162px; font-size: 11px; padding: 8px 14px 8px 12px; }
-  .pill::before { width: 10px; height: 10px; }
-  /* A shorter hero raises the bottom-anchored portrait, so this text now
-     sits over her hair. Same halo the name uses, to keep it legible. */
-  .spec {
-    top: 162px;
-    max-width: 130px;
-    font-size: 11px;
-    text-shadow: 0 0 14px var(--color-bg), 0 0 4px var(--color-bg);
-  }
-  .name { font-size: clamp(28px, 7vw, 44px); letter-spacing: -1px; bottom: 14%; z-index: 3; }
-  .role { font-size: clamp(12px, 3vw, 18px); left: 4%; right: auto; bottom: 5%; text-align: left; z-index: 3; }
-  /* Centre the portrait. At left:72% most of her was cropped off-screen.
-     Height is a % of .hero rather than vh so it tracks the clamps above. */
-  .subject { left: 50%; height: 84%; }
-
-  .nav-desktop, .nav-cta { display: none; }
-  .menu-toggle { display: flex; }
-  .nav-mobile { display: block; }
-
-  .expertise, .finance-action, .projects, .about, .experience, .education, .achievements, .certifications, .leadership, .classroom, .exploring, .contact { padding: 80px 0; }
-
-  .expertise-row { grid-template-columns: 1fr; row-gap: 32px; }
-  .expertise-card { border-left: none; padding-left: 0; }
-
-  .finance-grid { grid-template-columns: 1fr; gap: 20px; }
-  .projects-grid { grid-template-columns: 1fr; gap: 20px; }
-  
-  .exp-horizontal-card { padding: 28px; }
-  .exp-card-header { flex-direction: column; gap: 8px; }
-  .exp-footer { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .skills-grid { grid-template-columns: 1fr; gap: 24px; }
-
-  .education-row { grid-template-columns: 1fr; gap: 16px; }
-  .achievements-counter-grid { grid-template-columns: repeat(2, 1fr); }
-  .achievements-grid { grid-template-columns: 1fr; gap: 20px; }
-  .certifications-grid { grid-template-columns: 1fr; gap: 20px; }
-
-  .leadership-grid { grid-template-columns: 1fr; gap: 24px; }
-  .classroom-grid { grid-template-columns: 1fr; gap: 24px; }
-  .leadership-card { padding: 28px; }
-
-  .contact-form { padding: 28px; }
-
-  /* Grid and flex children default to min-width:auto, so a long word or a
-     fixed inner grid can push a card wider than its track and scroll the
-     whole page sideways. Let them shrink instead. */
-  .leadership-card,
-  .leadership-header,
-  .leadership-metrics,
-  .lead-metric,
-  .exp-horizontal-card,
-  .achievement-card,
-  .certification-card,
-  .project-card,
-  .classroom-card { min-width: 0; }
-
-  /* Stack the card header so the date gets its own full-width line rather
-     than being squeezed against the title (matches .exp-card-header). */
-  .leadership-header { flex-direction: column; gap: 6px; }
-
-  /* Touch targets: these sit well under the ~44px comfortable minimum. */
-  .btn-details,
-  .link-arrow,
-  .contact-link {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-  }
-
-  h2 { margin-bottom: 32px; }
-}
-
-@media (max-width: 480px) {
-  .about-stats { gap: 28px; }
-  .achievements-counter-grid { grid-template-columns: 1fr; }
-
-  /* 32px of container padding either side leaves little room on a 320px
-     screen, so tighten the gutters and the roomier cards. */
-  .container { padding: 0 20px; }
-  .leadership-card { padding: 22px; }
-  .exp-horizontal-card { padding: 22px; }
-  .contact-form { padding: 22px; }
-
-  /* Keep the three stats on one row, just smaller. */
-  .leadership-metrics { gap: 10px; }
-  .lead-metric strong { font-size: 1.3rem; }
-  .lead-metric span { font-size: 0.72rem; letter-spacing: 0; }
-
-  /* Long addresses and URLs were the other source of sideways scroll. */
-  .contact-link { word-break: break-word; }
-}
+
